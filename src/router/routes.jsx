@@ -1,4 +1,4 @@
-import Home from '../components/pages/home/home'
+import Home from '../components/pages/home/Home'
 import AboutCity from '../components/pages/about_city/AboutCity'
 import AboutUs from '../components/pages/about_us/AboutUs'
 import Apartment from '../components/pages/apartment/Apartment'

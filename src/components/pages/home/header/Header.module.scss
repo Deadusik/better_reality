@@ -1,0 +1,13 @@
+.Header {
+    width: 100%;
+    position: relative;
+
+    &__Background {
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+}

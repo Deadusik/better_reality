@@ -6,9 +6,15 @@ import styles from './Navbar.module.scss'
 //imgs
 import logoImg from '../../imgs/logo.png'
 
-const Navbar = () => {
+const Navbar = ({ pathname }) => {
+
     return (
-        <div className={styles.Navbar}>
+        <div
+            className={
+                pathname === '/' ?
+                    [styles.Navbar, styles.Navbar_Home].join(' ')
+                    : styles.Navbar
+            }>
             <div className={[styles.Navbar__Content, 'wrapcontent'].join(' ')}>
                 <div className={styles.Logo}>
                     <Link to='/'>

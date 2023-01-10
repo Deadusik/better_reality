@@ -1,10 +1,14 @@
 import React from 'react'
+
+//components
+import Header from './header/Header'
+//styles
 import styles from './home.module.scss'
 
 const Home = () => {
     return (
         <div>
-            <h1>Home page</h1>
+            <Header />
         </div>
     )
 }
