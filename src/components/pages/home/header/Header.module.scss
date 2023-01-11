@@ -1,3 +1,5 @@
+@import '../../../../styles/colors.scss';
+
 .Header {
     width: 100%;
     position: relative;
@@ -9,5 +11,79 @@
         position: absolute;
         object-fit: cover;
         filter: brightness(50%);
+    }
+
+    &__Content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__Col {
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            justify-items: end;
+        }
+    }
+
+    &__Title {
+        max-width: 659px;
+        width: 100%;
+        margin-top: 66px;
+        color: white;
+        font-family: HeliosBold;
+        font-style: normal;
+        font-size: 109px;
+        line-height: 127px;
+        letter-spacing: 0.1em;
+    }
+
+    &__Description {
+        max-width: 608px;
+        width: 100%;
+        margin-top: 10px;
+        color: white;
+        font-family: MontserratLight;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    &__Button {
+        margin-top: 62px;
+    }
+
+    &__CircleImgContainer {
+        min-width: 420px;
+        height: 420px;
+        margin-top: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 11px;
+        background: linear-gradient(0.25turn, $start_gradient, $end_gradient);
+    }
+
+    &__CircleImgBorder {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    &__CircleImg {
+        object-fit: cover;
+    }
+
+    &__NextButton {
+        display: flex;
+        justify-content: end;
+        margin-top: 25px;
     }
 }

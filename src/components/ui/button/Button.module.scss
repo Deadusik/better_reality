@@ -1,0 +1,24 @@
+@import '../../../styles/colors.scss';
+
+.Button {
+    max-width: 376px;
+    width: 100%;
+    height: 100px;
+    padding: 38px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(0.25turn, $start_gradient, $end_gradient);
+    border-radius: 31px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+
+    p {
+        color: white;
+        font-family: MontserratSemiBold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

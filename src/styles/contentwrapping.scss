@@ -1,5 +1,10 @@
 $space: 149px;
+$space_header: 128px;
 
 .wrapcontent {
-    margin: 0 $space;
+    padding: 0 $space;
+
+    &_top {
+        padding-top: $space_header;
+    }
 }
