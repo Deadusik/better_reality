@@ -1,0 +1,10 @@
+.ApartmentTypes {
+    &__Content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__Item {
+        width: 50%;
+    }
+}
