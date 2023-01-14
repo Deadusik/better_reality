@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 //styles
-import '../../styles/contentwrapping.scss'
+import '../../styles/wrapping.scss'
 import styles from './Navbar.module.scss'
 //imgs
 import logoImg from '../../imgs/logo.png'

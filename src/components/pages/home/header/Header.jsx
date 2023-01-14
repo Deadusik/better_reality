@@ -3,7 +3,7 @@ import React from 'react'
 import Button from '../../../ui/button/Button'
 //styles
 import styles from './Header.module.scss'
-import '../../../../styles/contentwrapping.scss'
+import '../../../../styles/wrapping.scss'
 //imgs
 import background from '../../../../imgs/background/header.png'
 import buildingImg from '../../../../imgs/building.png'

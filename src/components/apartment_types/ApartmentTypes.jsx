@@ -38,7 +38,7 @@ const ApartmentTypes = () => {
                             index % 2 === 0 ? true : false
 
                         return (
-                            <div className={styles.ApartmentTypes__Item}>
+                            <div className={styles.ApartmentTypes__Item} key={Date.now() + index}>
                                 <BgImgButton
                                     background={apartment.imgSrc}
                                     isWrapContent={isWrapContent}>

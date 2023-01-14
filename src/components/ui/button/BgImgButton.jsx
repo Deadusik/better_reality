@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './BgImgButton.module.scss'
-import '../../../styles/contentwrapping.scss'
+import '../../../styles/wrapping.scss'
 
 const BgImgButton = ({ children, background, isWrapContent }) => {
     return (
