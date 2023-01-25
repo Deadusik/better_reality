@@ -2,11 +2,85 @@
 
 .Footer {
     height: 267px;
+    min-height: 267px;
     background-color: $dark_brown;
+
+    &__Content {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.Title {}
+.Title {
+    &__Logo {
+        width: 137.51px;
+        height: 80.47px;
+    }
 
-.Info {}
+    p {
+        margin-top: 12px;
+        font-family: MontserratLight;
+        color: white;
+        font-size: 26px;
+        line-height: 32px;
+    }
 
-.QRCode {}
+    &__Icons {
+        margin-top: 18px;
+        max-width: 182px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__Icon {
+        width: auto;
+        height: 32px;
+        object-fit: cover;
+    }
+}
+
+%lightText {
+    font-family: MontserratLight;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        margin-top: 20px;
+        @extend %lightText;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.QRCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 125px;
+        height: 125px;
+    }
+
+    p {
+        margin-top: 10px;
+        @extend %lightText;
+
+        &:last-child {
+            margin-top: 0px;
+        }
+    }
+}
