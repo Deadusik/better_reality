@@ -1,0 +1,31 @@
+@import './../../../../styles/colors.scss';
+
+.AdviceDialog {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__Content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1142px;
+        width: 100%;
+        height: 521px;
+        margin: auto;
+
+        border-radius: 43.8464px;
+        border: 20px solid $dark_brown;
+        background-color: white;
+    }
+
+    &_Hide {
+        display: none;
+    }
+}

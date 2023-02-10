@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 //styles
 import '../../styles/wrapping.scss'
 import styles from './Navbar.module.scss'
 //imgs
 import logoImg from '../../imgs/logo.png'
+import AdviceDialog from '../ui/advice/advice_dialog/AdviceDialog'
 
 const Navbar = ({ pathname }) => {
+    const [showDialog, setShowDialog] = useState(false);
+
+    const showCallback = (isShow) => {
+        setShowDialog(isShow)
+    }
 
     return (
         <div
@@ -33,7 +39,8 @@ const Navbar = ({ pathname }) => {
                         Про нас
                     </Link>
                     <Link
-                        className={styles.Links__Link}>
+                        className={styles.Links__Link}
+                        onClick={() => setShowDialog(!showDialog)}>
                         Центр продажу
                     </Link>
                     <Link
@@ -43,6 +50,11 @@ const Navbar = ({ pathname }) => {
                     </Link>
                 </div>
             </div>
+
+            <AdviceDialog 
+            isShow={showDialog}
+            showCallback={showCallback} />
+
         </div>
     )
 }

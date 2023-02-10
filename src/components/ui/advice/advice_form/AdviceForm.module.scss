@@ -1,46 +1,71 @@
 @import '../../../../styles/fontstyles.scss';
 @import '../../../../styles/buttonstyles.scss';
 
+%content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%formContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+%info {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+%title {
+    font-family: HeliosBold;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -0.01em;
+}
+
+%description {
+    width: 100%;
+    max-width: 417px;
+    margin-top: 40px;
+    @extend %MontserratText;
+}
+
+%form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+%submit {}
+
 .AdviceForm {
     width: 100%;
 
     &__Content {
-        padding-bottom: 85px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %content;
     }
 
     &__FormContainer {
-        display: flex;
-        justify-content: space-between;
+        @extend %formContainer;
     }
 
     &__Info {
-        max-width: 550px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        @extend %info;
     }
 
     &__Title {
-        font-family: HeliosBold;
-        font-size: 50px;
-        line-height: 58px;
-        letter-spacing: -0.01em;
+        @extend %title;
     }
 
     &__Description {
-        width: 100%;
-        max-width: 417px;
-        margin-top: 40px;
-        @extend %MontserratText;
+        @extend %description;
     }
 
     &__Form {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
+        @extend %form;
 
         %inputfont {
             color: rgba(0, 0, 0, 0.4);
@@ -79,3 +104,5 @@
         }
     }
 }
+
+.AdviceFormDialog {}
